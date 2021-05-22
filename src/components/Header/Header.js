@@ -1,19 +1,22 @@
 import React, { useState } from "react";
-import Hamburger from "./Hamburger/index";
+import Burger from "@animated-burgers/burger-squeeze"
+import "@animated-burgers/burger-squeeze/dist/styles.css"
+import logo from '../../assets/images/Group 1.png'
+
 
 function Header() {
-  const [activee, setActivee] = "active";
+  const [active, setActive] = useState(false);
 
-  const eventHandler = () => {
-    console.log("YOweO");
+  const burgerHandler = () => {
+    setActive(!active);
   };
   return (
     <>
       <div className="nav-header">
-        <li>Home</li>
-        <li>Blog</li>
-        <li>Whatever</li>
-        <li>You once</li>
+        <ul className="nav-header-items">
+          <img src={logo} id="logo"></img>
+          <Burger isOpen= { active} title="Squeeze" onClick={() => burgerHandler()} id="burger"></Burger>
+        </ul>
       </div>
     </>
   );
