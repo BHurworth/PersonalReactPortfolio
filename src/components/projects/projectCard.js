@@ -1,5 +1,6 @@
 import React from 'react'
 import git from '../../assets/images/git64.png'
+import btn from '../../assets/images/project-btn.png'
 
 function projectCard({ img, desc, title}) {
     return (
@@ -8,6 +9,7 @@ function projectCard({ img, desc, title}) {
             <div className='project-text'>
                 <div className='project-info'>
                     <h1 className='project-title'>{title}</h1>
+                    <div id = 'divider-line-small'></div>
                     <h2 className='project-desc'>{desc}</h2>
                 </div>
                 <div className='buttons'>
