@@ -43,15 +43,26 @@
 }
 
 
+
+
+
+
 /* Landing section */
 
-
 .landing-section-wrapper {
-  height: 100vh;
+  /* THis is the part that needs changing for the svg. The height value */
+
   width: 100%;
   font-family: "Lato", sans-serif;
   overflow: hidden;
-  background-image: linear-gradient( 135deg, #43CBFF 10%, #9708CC 100%); 
+  background-position: center;
+  background-size: 250% 200%;
+  background-repeat: no-repeat;
+
+  /* background-image: linear-gradient(-45deg,#ffc796,#ff6b6b); */
+
+  /* The first one was the previous blue/purple one I was using */
+  /* background-image: linear-gradient( 135deg, #43CBFF 10%, #9708CC 100%);  */
   /* background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%); */
   /* background-image: linear-gradient( 135deg, #F97794 10%, #623AA2 100%); */
 }
@@ -75,13 +86,13 @@
   color: white;
   text-align: center;
   font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
 }
 .landing-person{
   position: relative;
-  top: 80px;
+  top: 150px;
   right: 25px;
   width: 200px;
-
 }
 .button{
   display: flex;
@@ -90,13 +101,16 @@
   background-color: white;
   border-radius: 45px;
   position: relative;
-  bottom: 350px;
+  bottom: 300px;
   margin: auto;
   justify-content: center;
   align-items: center;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
 }
 .button h5 {
-  font-family: "Lato", sans-serif;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
   font-size: 15px;
 }
 
@@ -112,15 +126,26 @@
   width: 100px;
   height: 1.7px;
   margin-top: 20px;
-  background-color: #5B86E5;
+  background-color: #9708CC;
   margin-bottom: 50px;
+}
+
+#divider-line-small{
+  width: 100px;
+  height: 1.7px;
+  margin-top: 10px;
+  background-color: #9708CC;
 }
 
 .projects-wrapper{
   display: flex;
   align-items: center;
   flex-direction: column;
-  gap: 40px;
+
+  background-color: #f2f2f2;
+    -webkit-font-smoothing: antialiased;
+  -webkit-tap-highlight-color: transparent;
+  /* #212529 */
 }
 
 .project-card {
@@ -129,9 +154,11 @@
   width: 90%;
   height: 70vh;
   border-radius: 20px;
-  -moz-box-shadow: 0 0 3px #ccc;
-  -webkit-box-shadow: 0 0 3px #ccc;
-  box-shadow: 0 0 10px #ccc;
+  -moz-box-shadow: 0 0 1px #ccc;
+  -webkit-box-shadow: 0 0 1px #ccc;
+  box-shadow: 0 0 4px #ccc;
+  margin-bottom: 40px;
+  background-color: white;
 }
 
 .project-text{
@@ -153,14 +180,15 @@
   margin-top: 30px;
   font-family: "Playfair Display", serif;
   font-size: 1.55em;
+  color: #212529;
 }
 
 .project-desc{
   margin-top: 20px;
   font-family: 'Montserrat', sans-serif;
   font-size: 1em;
-  margin-left: 15px;
-  margin-right: 15px;
+  margin-left: 17px;
+  margin-right: 17px;
   color: #7c82a2;
 }
 
@@ -171,6 +199,7 @@
   border-top-right-radius: 20px;
 }
 .buttons{
+  margin-top: 20px;
   margin-bottom: 30px;
   width: 100%;
   display:flex;
@@ -181,9 +210,10 @@
 }
 
 .project-btn {
-  background: #36D1DC;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #5B86E5, #36D1DC);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #5B86E5, #36D1DC);
+  /* background: #36D1DC;  fallback for old browsers */
+  /* background: -webkit-linear-gradient(to right, #43CBFF #9708CC);  Chrome 10-25, Safari 5.1-6 */
+  /* background-image: linear-gradient( 135deg, #43CBFF 2%, #9708CC 100%); */
+  border: 2px solid #9708CC;;
   width: 50%;
   height: 50px;
   border-radius: 30px;
@@ -191,7 +221,9 @@
   justify-content: center;
   align-items: center;
   font-family: 'Montserrat', sans-serif;
+  color: black;
 }
+
 
 .git-logo{
   width: 40px;
@@ -216,13 +248,13 @@
 .custom-shape-divider-bottom-1621703551 svg {
   position: relative;
   display: block;
-  width: calc(296% + 1.3px);
-  height: 500px;
+  width: calc(100% + 1.3px);
+  height: 300px;
   background-color: transparent;
 }
 
 .custom-shape-divider-bottom-1621703551 .shape-fill {
-  fill: #FFFFFF;
+  fill: #f2f2f2;
 }
 
 /** For mobile devices **/
