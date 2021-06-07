@@ -1,6 +1,6 @@
 @import url(https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap);
 
-*{
+* {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
@@ -14,12 +14,12 @@
   justify-content: space-between;
   align-items: center;
   padding: 1% 10%;
-  z-index: 25;
+  z-index: 2;
   color: white;
   padding: 0;
 }
 
-.nav-header-items{
+.nav-header-items {
   width: 100%;
   height: 100%;
   background-color: transparent;
@@ -29,23 +29,47 @@
   align-items: center;
 }
 
-#burger { 
+#burger {
   margin-right: 30px;
   font-size: 7px;
   margin-top: 15px;
+  z-index: 5;
+  background: black;
 }
+
+#burger #burger-lines,
+#burger #burger-lines:after,
+#burger #burger-lines:before { background-color: red; }
+
 
 #logo {
   height: 32px;
   width: 32px;
-  margin-Left: 30px;
+  margin-left: 30px;
   margin-top: 15px;
 }
 
+.side-nav-active {
+  top: 0;
+  position: absolute;
+  width: 70%;
+  height: 100%;
+  background-color: #ffffff;
+  z-index: 3;
+  right: -0;
+  transition: all 0.3s;
+}
 
-
-
-
+.side-nav-inactive{
+  top: 0;
+  position: absolute;
+  width: 70%;
+  height: 100%;
+  background-color: #ffffff;
+  z-index: 3;
+  right: -100%;
+  transition: all 0.8s
+}
 
 /* Landing section */
 
@@ -85,16 +109,16 @@
   margin-top: 20px;
   color: white;
   text-align: center;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 400;
 }
-.landing-person{
+.landing-person {
   position: relative;
   top: 150px;
   right: 25px;
   width: 200px;
 }
-.button{
+.button {
   display: flex;
   width: 220px;
   height: 50px;
@@ -105,45 +129,43 @@
   margin: auto;
   justify-content: center;
   align-items: center;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 700;
 }
 .button h5 {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 700;
   font-size: 15px;
 }
 
-
-
 /* Projects section */
-#projects-title{
+#projects-title {
   font-family: "Playfair Display", serif;
   text-align: center;
   margin-top: 75px;
 }
-#divider-line{
+#divider-line {
   width: 100px;
   height: 1.7px;
   margin-top: 20px;
-  background-color: #9708CC;
+  background-color: #9708cc;
   margin-bottom: 50px;
 }
 
-#divider-line-small{
+#divider-line-small {
   width: 100px;
   height: 1.7px;
   margin-top: 10px;
-  background-color: #9708CC;
+  background-color: #9708cc;
 }
 
-.projects-wrapper{
+.projects-wrapper {
   display: flex;
   align-items: center;
   flex-direction: column;
 
   background-color: #f2f2f2;
-    -webkit-font-smoothing: antialiased;
+  -webkit-font-smoothing: antialiased;
   -webkit-tap-highlight-color: transparent;
   /* #212529 */
 }
@@ -161,7 +183,7 @@
   background-color: white;
 }
 
-.project-text{
+.project-text {
   width: 100%;
   height: 50%;
   display: flex;
@@ -176,33 +198,33 @@
   justify-content: center;
   align-items: center;
 }
-.project-title{
+.project-title {
   margin-top: 30px;
   font-family: "Playfair Display", serif;
   font-size: 1.55em;
   color: #212529;
 }
 
-.project-desc{
+.project-desc {
   margin-top: 20px;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 1em;
   margin-left: 17px;
   margin-right: 17px;
   color: #7c82a2;
 }
 
-.project-image{
+.project-image {
   width: 100%;
   height: 50%;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
 }
-.buttons{
+.buttons {
   margin-top: 20px;
   margin-bottom: 30px;
   width: 100%;
-  display:flex;
+  display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
@@ -213,29 +235,22 @@
   /* background: #36D1DC;  fallback for old browsers */
   /* background: -webkit-linear-gradient(to right, #43CBFF #9708CC);  Chrome 10-25, Safari 5.1-6 */
   /* background-image: linear-gradient( 135deg, #43CBFF 2%, #9708CC 100%); */
-  border: 2px solid #9708CC;;
+  border: 2px solid #9708cc;
   width: 50%;
   height: 50px;
   border-radius: 30px;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   color: black;
 }
 
-
-.git-logo{
+.git-logo {
   width: 40px;
   height: 40px;
 }
 
-
-
-
-
-
-  
 .custom-shape-divider-bottom-1621703551 {
   position: absolute;
   bottom: 0;
@@ -260,8 +275,7 @@
 /** For mobile devices **/
 @media (max-width: 767px) {
   .custom-shape-divider-bottom-1621703551 svg {
-      width: calc(100% + 1.3px);
-      height: 100px;
+    width: calc(100% + 1.3px);
+    height: 100px;
   }
 }
-
