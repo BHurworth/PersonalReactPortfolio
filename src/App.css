@@ -6,6 +6,10 @@
   box-sizing: border-box;
 }
 
+.landing-page-wrapper {
+  overflow: hidden;
+}
+
 /* Header */
 .nav-header {
   width: 100%;
@@ -33,14 +37,8 @@
   margin-right: 30px;
   font-size: 7px;
   margin-top: 15px;
-  z-index: 5;
-  background: black;
+  z-index: 5; 
 }
-
-#burger #burger-lines,
-#burger #burger-lines:after,
-#burger #burger-lines:before { background-color: red; }
-
 
 #logo {
   height: 32px;
@@ -48,27 +46,68 @@
   margin-left: 30px;
   margin-top: 15px;
 }
+.side-nav-logo {
+  height: 64px;
+  width: 64px;
+}
 
+.side-nav-divider{
+  position: relative;
+  top: -70px;
+  width: 200px;
+  height: 1px;
+  background-color: #000000;
+}
 .side-nav-active {
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
   top: 0;
   position: absolute;
-  width: 70%;
+  width: 100%;
   height: 100%;
   background-color: #ffffff;
   z-index: 3;
   right: -0;
-  transition: all 0.3s;
+  transition: all 500ms;
 }
 
 .side-nav-inactive{
   top: 0;
   position: absolute;
-  width: 70%;
+  width: 100%;
   height: 100%;
   background-color: #ffffff;
   z-index: 3;
   right: -100%;
-  transition: all 0.8s
+  transition: all 1000ms;
+}
+
+.side-nav-links-active{
+  font-family: "Montserrat", sans-serif;
+  gap: 100px;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 75px;
+  display: flex;
+  list-style: none;
+  font-size: 1.7em;
+  transition: all 1000ms;
+}
+
+.side-nav-links-inactive {
+  font-family: "Montserrat", sans-serif;
+  gap: 100px;
+  align-items: center;
+  flex-direction: column;
+  display: flex;
+  margin-top: 200px;
+  list-style: none;
+  transition: all 3000ms;
+}
+
+.side-nav-link {
+  position: relative;
+  top: -90px;
 }
 
 /* Landing section */
@@ -82,6 +121,7 @@
   background-position: center;
   background-size: 250% 200%;
   background-repeat: no-repeat;
+  position: relative;
 
   /* background-image: linear-gradient(-45deg,#ffc796,#ff6b6b); */
 
@@ -96,7 +136,7 @@
   height: 100%;
 }
 #landing-title {
-  color: white;
+  color: #ffffff;
   margin-top: 20vh;
   font-family: "Playfair Display", serif;
   font-size: 3.5em;
@@ -107,7 +147,7 @@
   margin-left: 35px;
   margin-right: 35px;
   margin-top: 20px;
-  color: white;
+  color: #ffffff;
   text-align: center;
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
@@ -122,7 +162,7 @@
   display: flex;
   width: 220px;
   height: 50px;
-  background-color: white;
+  background-color: #ffffff;
   border-radius: 45px;
   position: relative;
   bottom: 300px;
@@ -137,6 +177,7 @@
   font-weight: 700;
   font-size: 15px;
 }
+
 
 /* Projects section */
 #projects-title {
@@ -154,7 +195,7 @@
 
 #divider-line-small {
   width: 100px;
-  height: 1.7px;
+  height: 1px;
   margin-top: 10px;
   background-color: #9708cc;
 }
@@ -180,7 +221,7 @@
   -webkit-box-shadow: 0 0 1px #ccc;
   box-shadow: 0 0 4px #ccc;
   margin-bottom: 40px;
-  background-color: white;
+  background-color: #ffffff;
 }
 
 .project-text {
@@ -243,7 +284,7 @@
   justify-content: center;
   align-items: center;
   font-family: "Montserrat", sans-serif;
-  color: black;
+  color: #000000;
 }
 
 .git-logo {
