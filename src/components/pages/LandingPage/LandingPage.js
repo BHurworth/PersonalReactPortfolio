@@ -2,6 +2,7 @@ import React from "react";
 import Header from "../../Header/Header";
 import man from '../../../assets/images/man2.png'
 import Projects from './projects/projects';
+import PersonalSkills from './personalSkills/personalSkills';
 import background from '../../../assets/images/ppbackgroundnew1.png'
 import Div100vh from 'react-div-100vh'
 
@@ -41,7 +42,7 @@ function LandingSection() {
           </svg>
         </div>
       </Div100vh>
-
+      <PersonalSkills />
       <Projects></Projects>
     </div>
   );
