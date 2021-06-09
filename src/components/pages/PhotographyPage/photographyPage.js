@@ -1,9 +1,11 @@
-import React from 'react'
+import React from "react";
+import Header from "../../Header/Header";
 
 export default function photographyPage() {
-    return (
-        <div>
-            
-        </div>
-    )
+  return (
+    <>
+    <Header></Header>
+      <div>HELLO</div>
+    </>
+  );
 }
