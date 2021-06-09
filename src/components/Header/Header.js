@@ -14,7 +14,7 @@ function Header() {
     <>
       <div className="nav-header">
         <ul className="nav-header-items">
-          <a href='/'>
+          <a href="/">
             <img src={logo} id="logo"></img>
           </a>
           <Burger
@@ -23,7 +23,7 @@ function Header() {
             onClick={() => burgerHandler()}
             id="burger"
           >
-            <div id="burger-lines"></div>
+
           </Burger>
         </ul>
       </div>
