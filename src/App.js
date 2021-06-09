@@ -1,6 +1,6 @@
 import logo from "./logo.svg";
 import "./App.css";
-import PhotographyPage from './components/pages/PhotographyPage/photographyPage';
+import PhotographyPage from "./components/pages/PhotographyPage/photographyPage";
 import LandingPage from "./components/pages/LandingPage/LandingPage";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
@@ -9,8 +9,12 @@ function App() {
     <Router>
       <div className="App">
         <Switch>
-          <Route path='/' component={LandingPage}></Route>
-          <Route exact path='/photography' component={PhotographyPage}></Route>
+          <Route
+            exact
+            path="/photography"
+            render={(props) => <PhotographyPage {...props} />}
+          ></Route>
+          <Route path="/" component={LandingPage}></Route>
         </Switch>
       </div>
     </Router>
