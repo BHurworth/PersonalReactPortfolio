@@ -8,7 +8,11 @@ import img3 from "../../../../assets/images/personal-site.png";
 function projects() {
   return (
     <div className="projects-wrapper">
-      <img src={separator}></img>
+
+      {/* SEPERATOR */}
+      <img src={separator} className='diag-seperator'></img>
+
+
       <h1 id="sub-title">My Latest Projects</h1>
       <div id="divider-line"></div>
 
