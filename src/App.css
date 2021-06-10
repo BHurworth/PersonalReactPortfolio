@@ -200,7 +200,8 @@
 
 .personalSkills-blob {
   width: 100%;
-
+  position: relative;
+  top: -30px;
 }
 
 
@@ -218,6 +219,10 @@
 
 
 /* Projects section */
+
+.diag-seperator{
+  width: 100%;
+}
 #sub-title {
   font-family: "Playfair Display", serif;
   text-align: center;
