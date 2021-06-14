@@ -1,5 +1,5 @@
 import React from "react";
-import { Link, NavLink } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import logo from "../../assets/images/logo-black.png";
 
 function SideNav({ show }) {
@@ -21,9 +21,6 @@ function SideNav({ show }) {
         </NavLink>
         <NavLink to='/contact-me' exact activeClassName="active" className="Link">
           <li className="side-nav-link">Contact Me</li>
-        </NavLink>
-        <NavLink to='/about-me' exact activeClassName="active" className="Link">
-          <li className="side-nav-link">About Me</li>
         </NavLink>
         <NavLink to="/photography" exact activeClassName="active" className="Link">
           <li className="side-nav-link">My Photography</li>

@@ -2,7 +2,7 @@ import React from "react";
 import git from "../../../../assets/images/git64.png";
 import btn from "../../../../assets/images/project-btn.png";
 
-function projectCard({ img, desc, title }) {
+function projectCard({ img, desc, title, link, gitLink, linkDesc }) {
   return (
     <div className="project-card">
       <img className="project-image" src={img} />
@@ -13,8 +13,8 @@ function projectCard({ img, desc, title }) {
           <h2 className="project-desc">{desc}</h2>
         </div>
         <div className="buttons">
-          <div className="project-btn">View Project</div>
-          <img className="git-logo" src={git}></img>
+          <a className='project-link' href={link}><div className="project-btn">{linkDesc}</div></a>
+          <a className='project-link' href={gitLink}><img className="git-logo" src={git}></img></a>
         </div>
       </div>
     </div>

@@ -4,7 +4,7 @@ import "@animated-burgers/burger-squeeze/dist/styles.css";
 import logo from "../../assets/images/logo.png";
 import SideNav from "./SideNav.js";
 
-function Header() {
+function Header( {color, className, className2} ) {
   const [active, setActive] = useState(false);
 
   const burgerHandler = () => {
@@ -12,8 +12,8 @@ function Header() {
   };
   return (
     <>
-      <div className="nav-header">
-        <ul className="nav-header-items">
+      <div style={{backgroundColor: color }} className={`nav-header ${className}`}>
+        <ul className={`nav-header-items ${className2}`}>
           <a href="/">
             <img src={logo} id="logo"></img>
           </a>
