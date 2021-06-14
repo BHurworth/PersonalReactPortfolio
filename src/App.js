@@ -1,6 +1,6 @@
 import logo from "./logo.svg";
 import "./App.css";
-import PhotographyPage from "./components/pages/PhotographyPage/photographyPage";
+import PhotographyPage from "./components/pages/PhotographyPage/PhotographyPage";
 import LandingPage from "./components/pages/LandingPage/LandingPage";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
