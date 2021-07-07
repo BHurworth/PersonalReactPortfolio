@@ -1,5 +1,5 @@
 import React from 'react';
-import blobFinal from '../../../../assets/images/blob1new9.png';
+import blobFinal from '../../../../assets/images/blobby6.png';
 
 export default function personalSkills() {
     return (
