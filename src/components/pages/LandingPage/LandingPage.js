@@ -42,7 +42,7 @@ function LandingSection() {
           </svg>
         </div>
       </Div100vh>
-      <PersonalSkills />
+      <PersonalSkills  />
       <Projects></Projects>
     </div>
   );
