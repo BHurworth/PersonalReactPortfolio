@@ -198,9 +198,9 @@
 }
 
 .personalSkills-blob {
-  width: 100%;
+  width: 140%;
   position: relative;
-  top: -30px;
+  top: -70px;
 }
 
 /* Projects section */
@@ -476,4 +476,41 @@
     width: calc(100% + 1.3px);
     height: 100px;
   }
+}
+
+@media only screen 
+and (min-device-width: 767px) {
+  .custom-shape-divider-bottom-1621703551 svg {
+    width: calc(100% + 1.3px);
+    height: 200px;
+  }
+
+    .personalSkills-wrapper{
+    margin-left: 25%;
+    margin-right: 25%;
+  }
+
+  .project-card {
+    width: 50%;
+    flex-direction: row;
+}
+}
+
+@media only screen 
+and (min-device-width: 1224px) {
+  .custom-shape-divider-bottom-1621703551 svg {
+    width: calc(100% + 1.3px);
+    height: 300px;
+  }
+
+     .personalSkills-wrapper{
+    margin-left: 35%;
+    margin-right: 35%;
+  }
+
+   .project-card {
+    width: 50%;
+    flex-direction: row;
+    height: 50%;
+}
 }
