@@ -11,8 +11,6 @@ function projects() {
 
       {/* SEPERATOR */}
 
-
-
       <h1 id="sub-title">My Latest Projects</h1>
       <div id="divider-line"></div>
 
