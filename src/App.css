@@ -206,7 +206,7 @@
 /* Projects section */
 
 .diag-seperator {
-  width: 100%;
+
 }
 #sub-title {
   font-family: "Playfair Display", serif;
@@ -414,7 +414,7 @@
 
 .photography-gallery-img {
   width: 48%;
-  height: 200px;
+  height: 40%
 }
 
 .backdrop {
