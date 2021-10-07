@@ -10,7 +10,7 @@ function projects() {
     <div className="projects-wrapper">
 
       {/* SEPERATOR */}
-      <img src={separator} className='diag-seperator'></img>
+
 
 
       <h1 id="sub-title">My Latest Projects</h1>
